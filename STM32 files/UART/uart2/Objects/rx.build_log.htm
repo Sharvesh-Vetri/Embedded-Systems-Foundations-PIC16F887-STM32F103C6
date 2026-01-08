@@ -1,0 +1,168 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sharvesh vetri, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Sharvesh V\OneDrive\Documents\keil files\UART\uart2\rx.uvprojx
+Project File Date:  06/25/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_ld.s...
+RTE/Device/STM32F103C6/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C6/system_stm32f10x.c(167): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+1 warning generated.
+compiling system_stm32f10x.c...
+rx.c(3): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int i=0;
+    ^
+rx.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i=0;
+^
+rx.c(5): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+void delay(int t)
+     ^
+rx.c(5): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay(int t)
+^
+static 
+rx.c(9): warning: no previous prototype for function 'enable' [-Wmissing-prototypes]
+void enable()
+     ^
+rx.c(9): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void enable()
+^
+static 
+rx.c(9): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void enable()
+           ^
+rx.c(17): warning: declaration shadows a variable in the global scope [-Wshadow]
+void lcd(unsigned int rs,char data)
+                              ^
+rx.c(2): note: previous declaration is here
+char data[7];
+     ^
+rx.c(17): warning: no previous prototype for function 'lcd' [-Wmissing-prototypes]
+void lcd(unsigned int rs,char data)
+     ^
+rx.c(17): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void lcd(unsigned int rs,char data)
+^
+static 
+rx.c(25): warning: no previous prototype for function 'print' [-Wmissing-prototypes]
+void print(char *str)
+     ^
+rx.c(25): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void print(char *str)
+^
+static 
+rx.c(40): warning: declaration shadows a variable in the global scope [-Wshadow]
+        int i;
+            ^
+rx.c(3): note: previous declaration is here
+int i=0;
+    ^
+rx.c(38): warning: no previous prototype for function 'tx' [-Wmissing-prototypes]
+void tx(char *str)
+     ^
+rx.c(38): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void tx(char *str)
+^
+static 
+rx.c(49): warning: no previous prototype for function 'strcheck' [-Wmissing-prototypes]
+int strcheck(char *ptr1,char *ptr2)
+    ^
+rx.c(49): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int strcheck(char *ptr1,char *ptr2)
+^
+static 
+rx.c(63): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+rx.c(69): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+    data[i] = USART1->DR;
+            ~ ~~~~~~~~^~
+rx.c(83): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                        GPIOB->ODR&=~(1<<0);
+                                                  ~~^~~~~~~
+rx.c(66): warning: no previous prototype for function 'rx' [-Wmissing-prototypes]
+void rx()
+     ^
+rx.c(66): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void rx()
+^
+static 
+rx.c(66): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void rx()
+       ^
+rx.c(126): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+rx.c(2): warning: no previous extern declaration for non-static variable 'data' [-Wmissing-variable-declarations]
+char data[7];
+     ^
+rx.c(2): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char data[7];
+^
+17 warnings generated.
+compiling rx.c...
+linking...
+Program Size: Code=1140 RO-data=252 RW-data=0 ZI-data=1648  
+".\Objects\rx.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C6
+  .\RTE\_Target_1
+  C:\Users\Sharvesh V\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Sharvesh V\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_ld.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\pwd_match.o"
+".\objects\startup_stm32f10x_ld.o"
+".\objects\system_stm32f10x.o"
+--rwpi --strict --scatter ".\Objects\pwd_match.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\pwd_match.map" -o .\Objects\pwd_match.axf

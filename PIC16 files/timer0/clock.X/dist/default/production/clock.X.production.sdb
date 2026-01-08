@@ -1,0 +1,102 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"26 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\timer0\clock.X\clock.c
+[v _delay delay `(v  1 e 1 0 ]
+"31
+[v _enable enable `(v  1 e 1 0 ]
+"39
+[v _print print `(v  1 e 1 0 ]
+"56
+[v _timer timer `(v  1 e 1 0 ]
+"65
+[v _hr_inc hr_inc `(v  1 e 1 0 ]
+"83
+[v _min_inc min_inc `(v  1 e 1 0 ]
+"106
+[v _main main `(v  1 e 1 0 ]
+"60 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1347
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"4327
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"23 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\timer0\clock.X\clock.c
+[v _count count `i  1 e 2 0 ]
+"24
+[v _time time `[9]uc  1 e 9 0 ]
+[v _sec1 sec1 `uc  1 e 1 0 ]
+[v _sec0 sec0 `uc  1 e 1 0 ]
+[v _min1 min1 `uc  1 e 1 0 ]
+[v _min0 min0 `uc  1 e 1 0 ]
+[v _hr1 hr1 `uc  1 e 1 0 ]
+[v _hr0 hr0 `uc  1 e 1 0 ]
+"106
+[v _main main `(v  1 e 1 0 ]
+{
+"165
+} 0
+"56
+[v _timer timer `(v  1 e 1 0 ]
+{
+"63
+} 0
+"39
+[v _print print `(v  1 e 1 0 ]
+{
+[v print@ptr ptr `*.4uc  1 a 1 wreg ]
+"44
+[v print@i i `i  1 a 2 4 ]
+"39
+[v print@ptr ptr `*.4uc  1 a 1 wreg ]
+"41
+[v print@ptr ptr `*.4uc  1 a 1 3 ]
+"54
+} 0
+"31
+[v _enable enable `(v  1 e 1 0 ]
+{
+"37
+} 0
+"26
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `i  1 p 2 0 ]
+"29
+} 0
+"83
+[v _min_inc min_inc `(v  1 e 1 0 ]
+{
+"102
+} 0
+"65
+[v _hr_inc hr_inc `(v  1 e 1 0 ]
+{
+"81
+} 0

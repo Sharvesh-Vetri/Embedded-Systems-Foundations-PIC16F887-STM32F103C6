@@ -1,0 +1,247 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"24 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\voltage_divider.X\voltage_divider.c
+[v _delay delay `(v  1 e 1 0 ]
+[v i1_delay delay `(v  1 e 1 0 ]
+"29
+[v _lcd lcd `(v  1 e 1 0 ]
+[v i1_lcd lcd `(v  1 e 1 0 ]
+"39
+[v _adc adc `II(v  1 e 1 0 ]
+"80
+[v _main main `(v  1 e 1 0 ]
+"167 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1239
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1246
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2971
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2978
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3589
+[v _ADIE ADIE `VEb  1 e 0 @1126 ]
+"3592
+[v _ADIF ADIF `VEb  1 e 0 @102 ]
+"3901
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3904
+[v _GO GO `VEb  1 e 0 @249 ]
+"4045
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"22 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\voltage_divider.X\voltage_divider.c
+[v _dv dv `i  1 e 2 0 ]
+"80
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+} 0
+"29
+[v _lcd lcd `(v  1 e 1 0 ]
+{
+[v lcd@rs rs `i  1 p 2 34 ]
+[v lcd@data data `uc  1 p 1 36 ]
+"37
+} 0
+"24
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `i  1 p 2 32 ]
+"27
+} 0
+"39
+[v _adc adc `II(v  1 e 1 0 ]
+{
+"49
+[v adc@volt volt `i  1 a 2 26 ]
+"60
+[v adc@d d `i  1 a 2 22 ]
+"58
+[v adc@c c `i  1 a 2 20 ]
+"56
+[v adc@b b `i  1 a 2 18 ]
+"54
+[v adc@a a `i  1 a 2 16 ]
+"50
+[v adc@volt_dec volt_dec `i  1 a 2 14 ]
+"48
+[v adc@dvolt_dec dvolt_dec `i  1 a 2 12 ]
+"47
+[v adc@dvolt dvolt `i  1 a 2 10 ]
+"79
+} 0
+"29
+[v i1_lcd lcd `(v  1 e 1 0 ]
+{
+[v i1lcd@rs rs `i  1 p 2 4 ]
+[v i1lcd@data data `uc  1 p 1 6 ]
+"37
+} 0
+"24
+[v i1_delay delay `(v  1 e 1 0 ]
+{
+[v i1delay@t t `i  1 p 2 0 ]
+"27
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 66 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 62 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 64 ]
+"53
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 61 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 60 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 52 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S361 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S366 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S369 . 4 `l 1 i 4 0 `d 1 f 4 0 `S361 1 fAsBytes 4 0 `S366 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S369  1 a 4 20 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 14 ]
+[s S438 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S441 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S438 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S441  1 a 2 24 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 19 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 18 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 13 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 46 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 39 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 44 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 51 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 50 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 43 ]
+"8
+[v ___fldiv@a a `d  1 p 4 26 ]
+[v ___fldiv@b b `d  1 p 4 30 ]
+"185
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 74 ]
+[v ___awmod@counter counter `uc  1 a 1 73 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 68 ]
+[v ___awmod@dividend dividend `i  1 p 2 70 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 75 ]
+[v ___awdiv@dividend dividend `i  1 p 2 77 ]
+"41
+} 0

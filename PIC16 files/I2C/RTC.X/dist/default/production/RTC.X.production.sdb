@@ -1,0 +1,150 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\I2C\RTC.X\RTC.c
+[v _delay delay `(v  1 e 1 0 ]
+"27
+[v _enable enable `(v  1 e 1 0 ]
+"34
+[v _lcd lcd `(v  1 e 1 0 ]
+"51
+[v _start start `(v  1 e 1 0 ]
+"57
+[v _address address `(v  1 e 1 0 ]
+"64
+[v _repeated_start repeated_start `(v  1 e 1 0 ]
+"77
+[v _read read `(uc  1 e 1 0 ]
+"89
+[v _stop stop `(v  1 e 1 0 ]
+"95
+[v _main main `(v  1 e 1 0 ]
+"291 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"844
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"851
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1541
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"1980
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"2178
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3568
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"3571
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"3574
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"3646
+[v _BF BF `VEb  1 e 0 @1184 ]
+"4048
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"4171
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"4231
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"4255
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"4282
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"95 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\I2C\RTC.X\RTC.c
+[v _main main `(v  1 e 1 0 ]
+{
+"139
+[v main@year year `uc  1 a 1 12 ]
+"138
+[v main@month month `uc  1 a 1 11 ]
+"137
+[v main@date date `uc  1 a 1 10 ]
+"135
+[v main@hour hour `uc  1 a 1 9 ]
+"134
+[v main@min min `uc  1 a 1 8 ]
+"133
+[v main@sec sec `uc  1 a 1 7 ]
+"136
+[v main@day day `uc  1 a 1 6 ]
+"170
+} 0
+"89
+[v _stop stop `(v  1 e 1 0 ]
+{
+"94
+} 0
+"51
+[v _start start `(v  1 e 1 0 ]
+{
+"56
+} 0
+"64
+[v _repeated_start repeated_start `(v  1 e 1 0 ]
+{
+"69
+} 0
+"77
+[v _read read `(uc  1 e 1 0 ]
+{
+[v read@ack ack `uc  1 a 1 wreg ]
+"79
+[v read@d d `uc  1 a 1 1 ]
+"77
+[v read@ack ack `uc  1 a 1 wreg ]
+"80
+[v read@ack ack `uc  1 a 1 0 ]
+"88
+} 0
+"34
+[v _lcd lcd `(v  1 e 1 0 ]
+{
+[v lcd@rs rs `i  1 p 2 2 ]
+[v lcd@data data `uc  1 p 1 4 ]
+"39
+} 0
+"27
+[v _enable enable `(v  1 e 1 0 ]
+{
+"33
+} 0
+"23
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 0 ]
+"26
+} 0
+"57
+[v _address address `(v  1 e 1 0 ]
+{
+[v address@addrs addrs `uc  1 a 1 wreg ]
+[v address@addrs addrs `uc  1 a 1 wreg ]
+"59
+[v address@addrs addrs `uc  1 a 1 0 ]
+"63
+} 0

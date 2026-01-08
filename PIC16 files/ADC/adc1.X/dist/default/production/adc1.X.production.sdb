@@ -1,0 +1,128 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"25 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\adc1.X\adc1.c
+[v _delay delay `(v  1 e 1 0 ]
+"30
+[v _enable enable `(v  1 e 1 0 ]
+"38
+[v _print print `(v  1 e 1 0 ]
+"55
+[v _dv_display dv_display `(v  1 e 1 0 ]
+"65
+[v _adc adc `(i  1 e 2 0 ]
+"74
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"22 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\adc1.X\adc1.c
+[v _dv dv `i  1 e 2 0 ]
+"23
+[v _display display `[5]uc  1 e 5 0 ]
+"167 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1239
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1246
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2971
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2978
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3904
+[v _GO GO `VEb  1 e 0 @249 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"74 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\adc1.X\adc1.c
+[v _main main `(v  1 e 1 0 ]
+{
+"98
+} 0
+"38
+[v _print print `(v  1 e 1 0 ]
+{
+[v print@ptr ptr `*.4uc  1 a 1 wreg ]
+"43
+[v print@i i `i  1 a 2 4 ]
+"38
+[v print@ptr ptr `*.4uc  1 a 1 wreg ]
+"40
+[v print@ptr ptr `*.4uc  1 a 1 3 ]
+"53
+} 0
+"30
+[v _enable enable `(v  1 e 1 0 ]
+{
+"36
+} 0
+"25
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `i  1 p 2 0 ]
+"28
+} 0
+"55
+[v _dv_display dv_display `(v  1 e 1 0 ]
+{
+"57
+[v dv_display@k k `i  1 a 2 12 ]
+[v dv_display@j j `i  1 a 2 10 ]
+"63
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"65 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\ADC\adc1.X\adc1.c
+[v _adc adc `(i  1 e 2 0 ]
+{
+"72
+} 0

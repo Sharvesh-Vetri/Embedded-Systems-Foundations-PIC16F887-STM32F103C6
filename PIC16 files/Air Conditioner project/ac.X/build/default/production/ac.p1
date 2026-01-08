@@ -1,0 +1,600 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4213 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _RE1 `Vb ~T0 @X0 0 e@73 ]
+"4210
+[v _RE0 `Vb ~T0 @X0 0 e@72 ]
+"353
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"3904
+[v _GO `Vb ~T0 @X0 0 e@249 ]
+"2971
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"1239
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"4108
+[v _RB0 `Vb ~T0 @X0 0 e@48 ]
+"4180
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"1141
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+[p mainexit ]
+"167
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"1417
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"229
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1479
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"291
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"1541
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"1603
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"415
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"1665
+[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
+"1246
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2978
+[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
+"3388
+[v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
+"3450
+[v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
+"2643
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"2557
+[v _TXSTA `Vuc ~T0 @X0 0 e@152 ]
+"1039
+[v _RCSTA `Vuc ~T0 @X0 0 e@24 ]
+"8 ac.c
+[p x FOSC  =  INTRC_NOCLKOUT ]
+"9
+[p x WDTE  =  OFF        ]
+"10
+[p x PWRTE  =  ON        ]
+"11
+[p x MCLRE  =  ON        ]
+"12
+[p x CP  =  OFF          ]
+"13
+[p x CPD  =  OFF         ]
+"14
+[p x BOREN  =  OFF       ]
+"15
+[p x IESO  =  ON         ]
+"16
+[p x FCMEN  =  ON        ]
+"17
+[p x LVP  =  OFF         ]
+"18
+[p x BOR4V  =  BOR40V    ]
+"19
+[p x WRT  =  OFF         ]
+"55 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"231
+[; <" PORTB equ 06h ;# ">
+"293
+[; <" PORTC equ 07h ;# ">
+"355
+[; <" PORTD equ 08h ;# ">
+"417
+[; <" PORTE equ 09h ;# ">
+"455
+[; <" PCLATH equ 0Ah ;# ">
+"462
+[; <" INTCON equ 0Bh ;# ">
+"540
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; <" PIR2 equ 0Dh ;# ">
+"653
+[; <" TMR1 equ 0Eh ;# ">
+"660
+[; <" TMR1L equ 0Eh ;# ">
+"667
+[; <" TMR1H equ 0Fh ;# ">
+"674
+[; <" T1CON equ 010h ;# ">
+"768
+[; <" TMR2 equ 011h ;# ">
+"775
+[; <" T2CON equ 012h ;# ">
+"846
+[; <" SSPBUF equ 013h ;# ">
+"853
+[; <" SSPCON equ 014h ;# ">
+"923
+[; <" CCPR1 equ 015h ;# ">
+"930
+[; <" CCPR1L equ 015h ;# ">
+"937
+[; <" CCPR1H equ 016h ;# ">
+"944
+[; <" CCP1CON equ 017h ;# ">
+"1041
+[; <" RCSTA equ 018h ;# ">
+"1136
+[; <" TXREG equ 019h ;# ">
+"1143
+[; <" RCREG equ 01Ah ;# ">
+"1150
+[; <" CCPR2 equ 01Bh ;# ">
+"1157
+[; <" CCPR2L equ 01Bh ;# ">
+"1164
+[; <" CCPR2H equ 01Ch ;# ">
+"1171
+[; <" CCP2CON equ 01Dh ;# ">
+"1241
+[; <" ADRESH equ 01Eh ;# ">
+"1248
+[; <" ADCON0 equ 01Fh ;# ">
+"1349
+[; <" OPTION_REG equ 081h ;# ">
+"1419
+[; <" TRISA equ 085h ;# ">
+"1481
+[; <" TRISB equ 086h ;# ">
+"1543
+[; <" TRISC equ 087h ;# ">
+"1605
+[; <" TRISD equ 088h ;# ">
+"1667
+[; <" TRISE equ 089h ;# ">
+"1705
+[; <" PIE1 equ 08Ch ;# ">
+"1761
+[; <" PIE2 equ 08Dh ;# ">
+"1818
+[; <" PCON equ 08Eh ;# ">
+"1865
+[; <" OSCCON equ 08Fh ;# ">
+"1930
+[; <" OSCTUNE equ 090h ;# ">
+"1982
+[; <" SSPCON2 equ 091h ;# ">
+"2044
+[; <" PR2 equ 092h ;# ">
+"2051
+[; <" SSPADD equ 093h ;# ">
+"2058
+[; <" SSPMSK equ 093h ;# ">
+"2063
+[; <" MSK equ 093h ;# ">
+"2180
+[; <" SSPSTAT equ 094h ;# ">
+"2349
+[; <" WPUB equ 095h ;# ">
+"2419
+[; <" IOCB equ 096h ;# ">
+"2489
+[; <" VRCON equ 097h ;# ">
+"2559
+[; <" TXSTA equ 098h ;# ">
+"2645
+[; <" SPBRG equ 099h ;# ">
+"2707
+[; <" SPBRGH equ 09Ah ;# ">
+"2777
+[; <" PWM1CON equ 09Bh ;# ">
+"2847
+[; <" ECCPAS equ 09Ch ;# ">
+"2929
+[; <" PSTRCON equ 09Dh ;# ">
+"2973
+[; <" ADRESL equ 09Eh ;# ">
+"2980
+[; <" ADCON1 equ 09Fh ;# ">
+"3014
+[; <" WDTCON equ 0105h ;# ">
+"3067
+[; <" CM1CON0 equ 0107h ;# ">
+"3132
+[; <" CM2CON0 equ 0108h ;# ">
+"3197
+[; <" CM2CON1 equ 0109h ;# ">
+"3248
+[; <" EEDATA equ 010Ch ;# ">
+"3253
+[; <" EEDAT equ 010Ch ;# ">
+"3260
+[; <" EEADR equ 010Dh ;# ">
+"3267
+[; <" EEDATH equ 010Eh ;# ">
+"3274
+[; <" EEADRH equ 010Fh ;# ">
+"3281
+[; <" SRCON equ 0185h ;# ">
+"3338
+[; <" BAUDCTL equ 0187h ;# ">
+"3390
+[; <" ANSEL equ 0188h ;# ">
+"3452
+[; <" ANSELH equ 0189h ;# ">
+"3502
+[; <" EECON1 equ 018Ch ;# ">
+"3547
+[; <" EECON2 equ 018Dh ;# ">
+"22 ac.c
+[v _count `i ~T0 @X0 1 e ]
+[i _count
+-> 0 `i
+]
+[v _dv `i ~T0 @X0 1 e ]
+[v _dv_temp `i ~T0 @X0 1 e ]
+[v _i `i ~T0 @X0 1 e ]
+[i _i
+-> 1 `i
+]
+[v _int_set_temp `i ~T0 @X0 1 e ]
+"23
+[v _room_temp `uc ~T0 @X0 -> 5 `i e ]
+[v _set_temp `uc ~T0 @X0 -> 5 `i e ]
+"25
+[v _delay `(v ~T0 @X0 1 ef1`ui ]
+"26
+{
+[e :U _delay ]
+"25
+[v _t `ui ~T0 @X0 1 r1 ]
+"26
+[f ]
+"27
+[e $U 139  ]
+[e :U 140 ]
+[e :U 139 ]
+[e $ != -- _t -> -> 1 `i `ui -> -> 0 `i `ui 140  ]
+[e :U 141 ]
+"28
+[e :UE 138 ]
+}
+"29
+[v _enable `(v ~T0 @X0 1 ef ]
+"30
+{
+[e :U _enable ]
+[f ]
+"31
+[e = _RE1 -> -> 1 `i `b ]
+"32
+[e ( _delay (1 -> -> 10 `i `ui ]
+"33
+[e = _RE1 -> -> 0 `i `b ]
+"34
+[e ( _delay (1 -> -> 10 `i `ui ]
+"35
+[e :UE 142 ]
+}
+"36
+[v _lcd `(v ~T0 @X0 1 ef2`i`uc ]
+"37
+{
+[e :U _lcd ]
+"36
+[v _rs `i ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+"37
+[f ]
+"38
+[e = _RE0 -> _rs `b ]
+"39
+[e = _PORTD -> _data `uc ]
+"40
+[e ( _enable ..  ]
+"41
+[e :UE 143 ]
+}
+"43
+[v _print `(v ~T0 @X0 1 ef2`uc`*uc ]
+"44
+{
+[e :U _print ]
+"43
+[v _addrs `uc ~T0 @X0 1 r1 ]
+[v _ptr `*uc ~T0 @X0 1 r2 ]
+"44
+[f ]
+"45
+[v _j `i ~T0 @X0 1 a ]
+"46
+{
+[e = _j -> 0 `i ]
+[e $U 148  ]
+[e :U 145 ]
+"47
+{
+"48
+[e ( _lcd (2 , -> 0 `i -> + -> _addrs `i _j `uc ]
+"49
+[e ( _lcd (2 , -> 1 `i *U + _ptr * -> _j `x -> -> # *U _ptr `i `x ]
+"50
+}
+[e ++ _j -> 1 `i ]
+[e :U 148 ]
+[e $ != -> *U + _ptr * -> _j `x -> -> # *U _ptr `i `x `ui -> 0 `ui 145  ]
+[e :U 146 ]
+}
+"51
+[e :UE 144 ]
+}
+"53
+[v _adc `(i ~T0 @X0 1 ef ]
+"54
+{
+[e :U _adc ]
+[f ]
+"55
+[e = _GO -> -> 1 `i `b ]
+"56
+[e $U 150  ]
+[e :U 151 ]
+"57
+{
+"58
+[e = _dv + -> _ADRESL `i * -> _ADRESH `i -> 256 `i ]
+"59
+}
+[e :U 150 ]
+"56
+[e $ _GO 151  ]
+[e :U 152 ]
+"61
+[e = _dv_temp -> / * -> -> _dv `f `d .150.0 -> -> 1023 `i `d `i ]
+"62
+[v _p `i ~T0 @X0 1 a ]
+[e = _p / _dv_temp -> 100 `i ]
+"63
+[v _q `i ~T0 @X0 1 a ]
+[e = _q % / _dv_temp -> 10 `i -> 10 `i ]
+"64
+[v _r `i ~T0 @X0 1 a ]
+[e = _r % _dv_temp -> 10 `i ]
+"66
+[e = *U + &U _room_temp * -> -> -> 0 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + _p -> 48 `i `uc ]
+"67
+[e = *U + &U _room_temp * -> -> -> 1 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + _q -> 48 `i `uc ]
+"68
+[e = *U + &U _room_temp * -> -> -> 2 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + _r -> 48 `i `uc ]
+"69
+[e = *U + &U _room_temp * -> -> -> 3 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> -> 67 `ui `uc ]
+"70
+[e :UE 149 ]
+}
+"72
+[v _temp_compare `(v ~T0 @X0 1 ef ]
+"73
+{
+[e :U _temp_compare ]
+[f ]
+"74
+[e = _int_set_temp + * - -> *U + &U _set_temp * -> -> -> 1 `i `ui `ux -> -> # *U &U _set_temp `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _set_temp * -> -> -> 2 `i `ui `ux -> -> # *U &U _set_temp `ui `ux `i -> 48 `i ]
+"76
+[e $ ! || < _int_set_temp -> 18 `i > _int_set_temp -> 35 `i 154  ]
+"77
+{
+"78
+[e ( _lcd (2 , -> 0 `i -> -> 1 `i `uc ]
+"79
+[e ( _print (2 , -> -> 128 `i `uc :s 1C ]
+"80
+[e = _RB0 -> -> 0 `i `b ]
+"81
+}
+[e $U 155  ]
+"82
+[e :U 154 ]
+[e $ ! > _dv_temp _int_set_temp 156  ]
+"83
+{
+"84
+{
+[e $U 160  ]
+[e :U 157 ]
+"85
+{
+"86
+[e -- _dv_temp -> 1 `i ]
+"87
+[e = *U + &U _room_temp * -> -> -> 1 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + / _dv_temp -> 10 `i -> 48 `i `uc ]
+"88
+[e = *U + &U _room_temp * -> -> -> 2 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + % _dv_temp -> 10 `i -> 48 `i `uc ]
+"89
+[e ( _print (2 , -> -> 139 `i `uc &U _room_temp ]
+"90
+[e ( _delay (1 -> -> 20000 `i `ui ]
+"91
+}
+[e :U 160 ]
+[e $ > _dv_temp _int_set_temp 157  ]
+[e :U 158 ]
+}
+"92
+[e = _RB0 -> -> 0 `i `b ]
+"93
+}
+[e $U 161  ]
+"94
+[e :U 156 ]
+[e $ ! < _dv_temp _int_set_temp 162  ]
+"95
+{
+"96
+{
+[e $U 166  ]
+[e :U 163 ]
+"97
+{
+"98
+[e ++ _dv_temp -> 1 `i ]
+"99
+[e = *U + &U _room_temp * -> -> -> 1 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + / _dv_temp -> 10 `i -> 48 `i `uc ]
+"100
+[e = *U + &U _room_temp * -> -> -> 2 `i `ui `ux -> -> # *U &U _room_temp `ui `ux -> + % _dv_temp -> 10 `i -> 48 `i `uc ]
+"101
+[e ( _print (2 , -> -> 139 `i `uc &U _room_temp ]
+"102
+[e ( _delay (1 -> -> 20000 `i `ui ]
+"103
+}
+[e :U 166 ]
+[e $ < _dv_temp _int_set_temp 163  ]
+[e :U 164 ]
+}
+"104
+[e = _RB0 -> -> 0 `i `b ]
+"105
+}
+[e $U 167  ]
+"106
+[e :U 162 ]
+"107
+{
+"108
+[e = _RB0 -> -> 0 `i `b ]
+"109
+}
+[e :U 167 ]
+[e :U 161 ]
+[e :U 155 ]
+"110
+[e :UE 153 ]
+}
+"112
+[v _receive `(v ~T0 @X0 1 ef ]
+"113
+{
+[e :U _receive ]
+[f ]
+"114
+[e $ ! == -> _RCIF `i -> 1 `i 169  ]
+"115
+{
+"116
+[e = *U + &U _set_temp * -> -> _i `ui `ux -> -> # *U &U _set_temp `ui `ux -> _RCREG `uc ]
+"117
+[e ++ _i -> 1 `i ]
+"118
+[e $ ! == _i -> 3 `i 170  ]
+"119
+{
+"120
+[e ++ _count -> 1 `i ]
+"121
+[e = *U + &U _set_temp * -> -> _i `ui `ux -> -> # *U &U _set_temp `ui `ux -> -> 67 `ui `uc ]
+"122
+[e = _i -> 1 `i ]
+"123
+[e = _RB0 -> -> 1 `i `b ]
+"124
+[e ( _print (2 , -> -> 192 `i `uc :s 2C ]
+"125
+[e ( _print (2 , -> -> 203 `i `uc &U _set_temp ]
+"126
+[e ( _temp_compare ..  ]
+"127
+}
+[e :U 170 ]
+"128
+[e = _RCIF -> -> 0 `i `b ]
+"129
+}
+[e :U 169 ]
+"130
+[e :UE 168 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"132
+[v _main `(v ~T0 @X0 1 ef ]
+"133
+{
+[e :U _main ]
+[f ]
+"134
+[e = _PORTA -> -> 0 `i `uc ]
+"135
+[e = _TRISA -> -> 13 `i `uc ]
+"136
+[e = _PORTB -> -> 0 `i `uc ]
+"137
+[e = _TRISB -> -> 0 `i `uc ]
+"138
+[e = _PORTC -> -> 0 `i `uc ]
+"139
+[e = _TRISC -> -> 128 `i `uc ]
+"140
+[e = _PORTD -> -> 0 `i `uc ]
+"141
+[e = _TRISD -> -> 0 `i `uc ]
+"142
+[e = _PORTE -> -> 0 `i `uc ]
+"143
+[e = _TRISE -> -> 0 `i `uc ]
+"145
+[e = _ADCON0 -> -> 129 `i `uc ]
+"146
+[e = _ADCON1 -> -> 176 `i `uc ]
+"147
+[e = _ANSEL -> -> 1 `i `uc ]
+"148
+[e = _ANSELH -> -> 0 `i `uc ]
+"150
+[e = _SPBRG -> -> 25 `i `uc ]
+"151
+[e = _TXSTA -> -> 38 `i `uc ]
+"152
+[e = _RCSTA -> -> 144 `i `uc ]
+"154
+[e ( _lcd (2 , -> 0 `i -> -> 56 `i `uc ]
+"155
+[e ( _lcd (2 , -> 0 `i -> -> 12 `i `uc ]
+"156
+[e ( _lcd (2 , -> 0 `i -> -> 1 `i `uc ]
+"157
+[e ( _lcd (2 , -> 0 `i -> -> 128 `i `uc ]
+"159
+[e = *U + &U _set_temp * -> -> -> 0 `i `ui `ux -> -> # *U &U _set_temp `ui `ux -> -> 48 `ui `uc ]
+"160
+[e :U 173 ]
+"161
+{
+"162
+[e $ ! == _count -> 0 `i 175  ]
+"163
+{
+"164
+[e ( _adc ..  ]
+"165
+[e ( _print (2 , -> -> 128 `i `uc :s 3C ]
+"166
+[e ( _print (2 , -> -> 139 `i `uc &U _room_temp ]
+"167
+}
+[e :U 175 ]
+"168
+[e ( _receive ..  ]
+"169
+}
+[e :U 172 ]
+[e $U 173  ]
+[e :U 174 ]
+"171
+[e :UE 171 ]
+}
+[a 1C 69 82 82 79 82 0 ]
+[a 3C 82 79 79 77 32 84 69 77 80 58 0 ]
+[a 2C 83 69 84 32 84 69 77 80 32 58 0 ]

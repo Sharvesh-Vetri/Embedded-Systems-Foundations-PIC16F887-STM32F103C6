@@ -1,0 +1,152 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"25 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\lift\lift.X\lift.c
+[v _log log `(i  1 e 2 0 ]
+"39
+[v _delay delay `(v  1 e 1 0 ]
+"43
+[v _enable enable `(v  1 e 1 0 ]
+"50
+[v _lcd lcd `(v  1 e 1 0 ]
+"56
+[v _print print `(v  1 e 1 0 ]
+"70
+[v _motor_fwd motor_fwd `(v  1 e 1 0 ]
+"75
+[v _motor_rev motor_rev `(v  1 e 1 0 ]
+"80
+[v _motor_stop motor_stop `(v  1 e 1 0 ]
+"86
+[v _motor motor `(v  1 e 1 0 ]
+"129
+[v _main main `(v  1 e 1 0 ]
+"167 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"229
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"291
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1479
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1541
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"4138
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"4141
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"23 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\lift\lift.X\lift.c
+[v _pow pow `i  1 e 2 0 ]
+"24
+[v _current_floor current_floor `i  1 e 2 0 ]
+[v _direction direction `i  1 e 2 0 ]
+"129
+[v _main main `(v  1 e 1 0 ]
+{
+"152
+[v main@j j `i  1 a 2 9 ]
+"142
+[v main@val val `i  1 a 2 7 ]
+"194
+} 0
+"86
+[v _motor motor `(v  1 e 1 0 ]
+{
+[v motor@pressed_floor pressed_floor `i  1 p 2 6 ]
+"127
+} 0
+"56
+[v _print print `(v  1 e 1 0 ]
+{
+[v print@adrs adrs `uc  1 a 1 wreg ]
+"58
+[v print@i i `i  1 a 2 4 ]
+"56
+[v print@adrs adrs `uc  1 a 1 wreg ]
+[v print@ptr ptr `*.24uc  1 p 1 2 ]
+"58
+[v print@adrs adrs `uc  1 a 1 3 ]
+"68
+} 0
+"80
+[v _motor_stop motor_stop `(v  1 e 1 0 ]
+{
+"84
+} 0
+"75
+[v _motor_rev motor_rev `(v  1 e 1 0 ]
+{
+"79
+} 0
+"70
+[v _motor_fwd motor_fwd `(v  1 e 1 0 ]
+{
+"74
+} 0
+"50
+[v _lcd lcd `(v  1 e 1 0 ]
+{
+[v lcd@rs rs `i  1 p 2 2 ]
+[v lcd@data data `uc  1 p 1 4 ]
+"55
+} 0
+"43
+[v _enable enable `(v  1 e 1 0 ]
+{
+"49
+} 0
+"39
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 0 ]
+"42
+} 0
+"25
+[v _log log `(i  1 e 2 0 ]
+{
+[v log@num num `i  1 p 2 9 ]
+"38
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0

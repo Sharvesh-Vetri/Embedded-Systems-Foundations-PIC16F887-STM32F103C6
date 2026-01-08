@@ -1,0 +1,82 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"24 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\SPI\slave to master\slave4_1.X\slave4_1.c
+[v _delay delay `(v  1 e 1 0 ]
+"28
+[v _enable enable `(v  1 e 1 0 ]
+"35
+[v _lcd lcd `(v  1 e 1 0 ]
+"62
+[v _main main `(v  1 e 1 0 ]
+"167 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"291
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"844
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"851
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1541
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2178
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"4210
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"4213
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"4282
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"22 C:\Users\Sharvesh V\OneDrive\Documents\PIC files\SPI\slave to master\slave4_1.X\slave4_1.c
+[v _chr chr `uc  1 e 1 0 ]
+[v _ch ch `[20]uc  1 e 20 0 ]
+[v _dat dat `uc  1 e 1 0 ]
+"62
+[v _main main `(v  1 e 1 0 ]
+{
+"84
+[v main@j j `i  1 a 2 5 ]
+"93
+} 0
+"35
+[v _lcd lcd `(v  1 e 1 0 ]
+{
+[v lcd@rs rs `i  1 p 2 2 ]
+[v lcd@data data `uc  1 p 1 4 ]
+"40
+} 0
+"28
+[v _enable enable `(v  1 e 1 0 ]
+{
+"34
+} 0
+"24
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 0 ]
+"27
+} 0
